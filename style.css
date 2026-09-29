@@ -1,6 +1,6 @@
 *{
     box-sizing:border-box;
-    margin:0;
+    margin:10;
     padding:0;
 }
 body{
@@ -19,7 +19,7 @@ body{
 }
 
 .profile-card,.section-card {
-    width:200px;
+    width:250px;
     height:96px;
     background: #fff;
     border-radius: 20px;
