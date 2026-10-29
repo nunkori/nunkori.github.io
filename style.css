@@ -15,10 +15,61 @@ header{
 .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
 .logo{font-size:21px;font-weight:800;letter-spacing:-.5px}
 .logo span{color:#5278ff}
-.menu{display:flex;gap:32px;font-size:14px;font-weight:600;color:#536078}
-.menu a:hover{color:#5278ff}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brand span {
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+/* 작은 화면에서도 메뉴가 잘 보이도록 */
+@media (max-width: 700px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+}
+
 .hero{padding:170px 0 110px;background:#fff}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+
+.hero-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  object-fit: contain;
+}
+
 .badge{
  display:inline-block;padding:7px 13px;border-radius:30px;
  background:#eef3ff;color:#5278ff;font-size:15px;font-weight:700;margin-bottom:18px
